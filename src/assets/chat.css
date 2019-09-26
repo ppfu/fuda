@@ -1,0 +1,149 @@
+/* header */
+.header {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px 4px 0px 0px;
+    padding-left: 20px;
+   /* background: url(./customerservice-web-bg.png) 0 0/10px auto repeat; */
+    text-align: center;
+}
+
+/* chat */
+.chat-content {
+    width: 100%;
+    overflow-y: scroll;
+    height: 10rem;
+}
+
+.chat-content .message-wrapper {
+    padding: 0 0.32rem;
+}
+
+.message-item:nth-child(n+1) {
+    margin-top: 0.66rem;
+}
+
+.message-item:last-child {
+    margin-bottom: 0.4rem;
+}
+
+.message-text {
+    display: flex;
+    font-size: 12px;
+	word-wrap:break-word ;
+}
+
+.my-msg .message-text {
+    flex-direction: row-reverse;
+}
+
+.you-msg .message-text {
+    padding-left: 1.39rem;
+}
+
+.message-text .rong-avatar {
+    flex-shrink: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.message-text .rong-avatar img {
+    width: 100%;
+}
+
+.message-text .message-body {
+    position: relative;
+    color: #353535;
+    padding: 0.16rem;
+    max-width: 80%;
+    min-height: 0.6rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    border-radius: 0.18rem;
+    -moz-border-radius: 0.18rem;
+    -webkit-border-radius: 0.18rem;
+}
+
+.message-text .message-body pre {
+    white-space: normal;
+    font-family: "Microsoft yahei";
+}
+
+.my-msg .message-text .message-body {
+    margin-right: 10px;
+    background: #fff;
+    opacity:0.9;
+}
+
+.my-msg .message-text .message-body:after {
+    position: absolute;
+    top: 8px;
+    right: -14px;
+    border: 5px solid transparent;
+    content: " ";
+    border-left-color: #fff;
+    border-left-width: 10px;
+}
+
+.your-msg .message-text .message-body {
+    margin-left: 0.25rem;
+    background: #fff;
+}
+
+.your-msg .message-text .message-body:before {
+    position: absolute;
+    top: 0.32rem;
+    left: -0.3rem;
+    border: 0.2rem solid transparent;
+    content: " ";
+    border-right-color: #fff;
+    border-right-width: 0.15rem;
+
+}
+
+/* footer */
+.footer {
+display: flex;
+justify-content: center;
+margin: 0.6rem 0.4rem;
+height:0.94rem;
+background:rgba(255,255,255,1);
+position: relative;
+align-items: center;
+overflow: hidden;
+}
+
+.footer .message-wrap {
+    flex: 1;
+    overflow: hidden;
+    padding: 0.4rem;
+
+}
+
+.footer .message-content {
+    padding-top: 0.6rem;
+    height: 100%;
+    width: 90%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: "Microsoft yahei";
+}
+
+.footer .send-btn {
+  position: absolute;
+    display: inline-block;
+    width:0.62rem;
+    height:0.52rem;
+    color: #fff;
+    background: url(img/fasong.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    right: 0.4rem;
+}

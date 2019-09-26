@@ -1,0 +1,306 @@
+html {
+  font-family: helvetica, "Microsoft Yahei", arial, sans-serif;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+input,
+button,
+textarea,
+p,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  font-family: Microsoft YaHei, sans-serif, Arial;
+}
+
+/*  通配符“*”可以代表所有标签  */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+.clear:after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+
+.clear {
+  zoom: 1;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.ta_c {
+  text-align: center;
+}
+
+.ta_l {
+  text-align: left;
+}
+
+.ta_r {
+  text-align: right !important;
+}
+
+.f_c {
+  color: #fcb90b !important;
+}
+
+.f_c_red {
+  color: #D40469 !important;
+}
+
+.f_c_green {
+  color: #01B782 !important;
+}
+
+.f_c_gray {
+  color: #888 !important;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right
+}
+
+.d-flex {
+  display: flex
+}
+
+.flex1 {
+  flex: 1
+}
+
+.btn {
+  border: 0;
+  padding: 0.1rem 0 0.1rem;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+input {
+  outline: 0;
+}
+
+/* vant */
+.van-pull-refresh {
+  overflow: visible !important;
+}
+
+
+
+
+
+.public {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  box-shadow: 0px 1px 2px rgba(113, 141, 184, 0.16);
+}
+/* 头部 */
+   .van-nav-bar {
+      height: 0.8rem;
+      line-height: 0.8rem;
+     background:linear-gradient(0deg,rgba(135,192,69,1) 0%,rgba(60,111,58,1) 100%) !important;
+    }
+    .van-nav-bar__text{
+      color: #fff !important;
+    }
+    .van-nav-bar__title {
+      font-size: 0.30rem;
+      font-weight: bold;
+      color: #fff !important;
+    }
+    .van-icon-arrow-left:before{
+      color: #fff !important;
+      font-size: 0.4rem !important;
+    }
+
+    .van-hairline--bottom::after {
+      border-bottom-width: 0;
+    }
+    .lang_dialog .weui-dialog{
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid #bbb;
+    }
+    .lang_dialog ul{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.05rem 10% 0.05rem;
+    }
+    .lang_dialog ul li{
+      color: #666;
+      overflow: hidden;
+      line-height: 1.4rem;
+      font-size: 0.28rem;
+      border-bottom: 1px solid #E9E9E9;
+    }
+    .lang_dialog ul li:last-child{
+      border-bottom: 0;
+    }
+    .lang_dialog ul li>span:first-child{
+      float: left;
+    }
+    .lang_dialog ul li>span:last-child{
+      float: right;
+    }
+    .lang_dialog ul li .iconfont{
+      opacity: 0;
+      font-size: .32rem;
+    }
+    .lang_dialog ul li.active{
+      color: #87C045;
+    }
+    .lang_dialog ul li.active .iconfont{
+      color: #87C045;
+      opacity: 1;
+    }
+    .van-cell {
+      padding: 0.48rem 0.3rem 0.04rem 0.3rem !important;
+      box-sizing: border-box !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+      background: none !important;
+    }
+    .van-hairline--top-bottom::after {
+      border-width: 0;
+    }
+    /* tab标签 */
+    .van-tab{
+      color: #fff !important;
+    }
+    .van-tab--active{
+      color: #E4BC5C !important;
+    }
+    .van-tabs__line{
+      background-color: #E4BC5C !important;
+    }
+    .van-tabs__nav{
+      background: none !important;
+    }
+    .van-hairline--top-bottom::after{
+       display: none;
+      }
+    /* .van-cell:not(:last-child)::after {
+      display: none;
+    } */
+
+    .log_pwd {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+
+    }
+   .log_pwd  span{
+      font-size: 0.4rem;
+      color: #fff;
+      display: inline-block;
+      margin-right: 0.22rem;
+      margin-bottom: -0.028rem;
+    }
+  .log_pwd   a {
+      position: absolute;
+      right: 0.2rem;
+      bottom: 0.08rem;
+      color: #fff;
+      font-size: 0.26rem;
+    }
+    .van-button--large {
+      height: 0.88rem !important;
+      line-height: 0.88rem !important;
+      margin-top: 0.68rem !important;
+    }
